@@ -1,0 +1,12 @@
+runtime: php
+env: flex
+
+runtime_config:
+  document_root: web
+
+manual_scaling:
+  instances: 1
+
+handlers:
+- url: .*
+  script: main.php
