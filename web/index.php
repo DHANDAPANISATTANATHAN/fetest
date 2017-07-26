@@ -1,3 +1,3 @@
 <?php
 
-echo 'Hello, world!  json deleted';
+echo 'Hello, world!  json deleted  from trigger';
