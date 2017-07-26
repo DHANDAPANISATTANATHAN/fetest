@@ -8,5 +8,6 @@ manual_scaling:
   instances: 1
 
 handlers:
+
 - url: .*
-  script: main.php
+  script: index.php
