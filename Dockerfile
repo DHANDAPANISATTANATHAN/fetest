@@ -1,6 +1,5 @@
 # Docker: Google App Engine
 
 FROM gcr.io/google-appengine/php
-
-app deploy --image-url=gcr.io/ssomensprojectsint/appengine:default.2
+deploy --image-url=gcr.io/ssomensprojectsint/appengine:default.2
 
