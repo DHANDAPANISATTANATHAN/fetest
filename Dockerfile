@@ -2,6 +2,6 @@
 
 FROM gcr.io/google-appengine/php
 
- args: ['push', 'gcr.io/ssomensprojectsint/appengine']
- args: ['app', 'deploy', '--image-url=gcr.io/ssomensprojectsint/appengine', 'app.yaml']
+'push', 'gcr.io/ssomensprojectsint/appengine'
+'app', 'deploy', '--image-url=gcr.io/ssomensprojectsint/appengine', 'app.yaml'
 
