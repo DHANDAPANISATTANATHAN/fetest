@@ -2,5 +2,5 @@
 
 FROM gcr.io/google-appengine/php
 
-'app', 'deploy', '--image-url=gcr.io/ssomensprojectsint/appengine', 'app.yaml'
+gcloud app deploy --image-url=gcr.io/ssomensprojectsint/appengine:default.2
 
