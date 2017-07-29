@@ -1,5 +1,6 @@
 steps:
 - name: gcr.io/cloud-builders/gcloud
+  args: ['push', 'gcr.io/ssomensprojectsint/appengine']
   args: ['app', 'deploy', '--image-url=gcr.io/ssomensprojectsint/appengine', 'app.yaml']
 
 
