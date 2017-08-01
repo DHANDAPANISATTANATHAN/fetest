@@ -1,12 +1,12 @@
 steps:
 # Build the Docker image.
-- name: us.gcr.io/cloud-builders/docker
-  args: ['build', '-t', 'us.gcr.io/ssomensprojectsint/appengine/uat.1', '.']
+- name: gcr.io/cloud-builders/docker
+  args: ['build', '-t', 'gcr.io/ssomensprojectsint/appengine/uat.1', '.']
 # Push it to GCR.
-- name: us.gcr.io/cloud-builders/docker
-  args: ['push', 'us.gcr.io/ssomensprojectsint/appengine/uat.1']
+- name: gcr.io/cloud-builders/docker
+  args: ['push', 'gcr.io/ssomensprojectsint/appengine/uat.1']
 # Deploy your Flex app from the image in GCR.
 - name: gcr.io/cloud-builders/gcloud
-  args: ['app', 'deploy','--version 1', 'app.yaml', '--image-url=us.gcr.io/ssomensprojectsint/appengine/uat.1:latest']
+  args: ['app', 'deploy','--version 1', 'app.yaml', '--image-url=gcr.io/ssomensprojectsint/appengine/uat.1:latest']
 # Note that this build pushes this image.
-images: ['us.gcr.io/ssomensprojectsint/appengine/uat.1:latest']
+images: ['gcr.io/ssomensprojectsint/appengine/uat.1:latest']
