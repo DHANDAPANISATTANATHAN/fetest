@@ -1,5 +1,6 @@
 runtime: php
 env: flex
+service: uat
 
 runtime_config:
   document_root: web
