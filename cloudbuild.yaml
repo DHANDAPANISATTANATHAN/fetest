@@ -7,6 +7,6 @@ steps:
   args: ['push', 'gcr.io/ssomensprojectsint/appengine/uat.1']
 # Deploy your Flex app from the image in GCR.
 - name: gcr.io/cloud-builders/gcloud
-  args: ['app', 'deploy','--version 1', 'app.yaml', '--image-url=gcr.io/ssomensprojectsint/appengine/uat.1:latest']
+  args: ['app', 'deploy','app.yaml', '--image-url=gcr.io/ssomensprojectsint/appengine/uat.1:latest']
 # Note that this build pushes this image.
 images: ['gcr.io/ssomensprojectsint/appengine/uat.1:latest']
